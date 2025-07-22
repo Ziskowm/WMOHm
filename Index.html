@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Digital Entrepreneur's Blueprint - Transform Your Financial Future</title>
+    <meta name="description" content="Learn how to build a six-figure online business in 12 months. Complete system with 90+ pages, audio MP3, and exclusive video training. Just $14.99">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #00ffff;
+        }
+        
+        .cta-button {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 25px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .warning-badge {
+            background: #ef4444;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 700;
+            display: inline-block;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+        
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 900;
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+        
+        .hero .subtitle {
+            font-size: 24px;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+        
+        .hero .cta-button {
+            font-size: 20px;
+            padding: 18px 40px;
+            margin: 20px 10px;
+        }
+        
+        .guarantee {
+            margin-top: 30px;
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        /* Social Proof */
+        .social-proof {
+            background: #f8fafc;
+            padding: 60px 0;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 48px;
+            font-weight: 900;
+            color: #10b981;
+            margin-bottom: 10px;
+        }
+        
+        .stat-label {
+            font-size: 18px;
+            color: #666;
+            font-weight: 600;
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .testimonial {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #555;
+        }
+        
+        .testimonial-author {
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .testimonial-result {
+            color: #10b981;
+            font-weight: 700;
+            margin-top: 10px;
+        }
+        
+        /* What You Get */
+        .what-you-get {
+            padding: 80px 0;
+            background: white;
+        }
+        
+        .section-title {
+            font-size: 36px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #1a1a2e;
+        }
+        
+        .section-subtitle {
+            font-size: 18px;
+            text-align: center;
+            color: #666;
+            margin-bottom: 50px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        
+        .benefit-item {
+            background: #f8fafc;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+        
+        .benefit-item:hover {
+            border-color: #10b981;
+            transform: translateY(-5px);
+        }
+        
+        .benefit-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        
+        .benefit-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #1a1a2e;
+        }
+        
+        .benefit-description {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        /* Bonus Section */
+        .bonus-section {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            padding: 80px 0;
+        }
+        
+        .bonus-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .bonus-item {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .bonus-value {
+            color: #00ffff;
+            font-weight: 700;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        
+        .bonus-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        
+        .bonus-description {
+            color: rgba(255,255,255,0.9);
+        }
+        
+        /* Pricing */
+        .pricing {
+            background: #f8fafc;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .pricing-card {
+            background: white;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .price-old {
+            font-size: 24px;
+            text-decoration: line-through;
+            color: #999;
+            margin-bottom: 10px;
+        }
+        
+        .price-new {
+            font-size: 60px;
+            font-weight: 900;
+            color: #10b981;
+            margin-bottom: 20px;
+        }
+        
+        .discount-badge {
+            background: #ef4444;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-weight: 700;
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+        
+        .urgency {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+        
+        .urgency-title {
+            font-weight: 700;
+            color: #856404;
+            margin-bottom: 10px;
+        }
+        
+        .urgency-text {
+            color: #856404;
+        }
+        
+        /* FAQ */
+        .faq {
+            padding: 80px 0;
+            background: white;
+        }
+        
+        .faq-grid {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background: #f8fafc;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #10b981;
+        }
+        
+        .faq-question {
+            font-weight: 700;
+            color: #1a1a2e;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        
+        .faq-answer {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        /* Footer */
+        .footer {
+            background: #1a1a2e;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+        
+        .footer-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .footer p {
+            margin-bottom: 15px;
+            color: rgba(255,255,255,0.8);
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+            
+            .hero .subtitle {
+                font-size: 18px;
+            }
+            
+            .section-title {
+                font-size: 28px;
+            }
+            
+            .price-new {
+                font-size: 48px;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Digital Entrepreneur's Blueprint</div>
+                <a href="#order" class="cta-button">Get Instant Access</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="warning-badge">🚨 847 People Already Transformed Their Lives</div>
+                <h1>This $14.99 Book Just Created 847 Millionaires</h1>
+                <p class="subtitle">The Digital Entrepreneur's Blueprint: From Side Hustle to Six Figures in 12 Months</p>
+                <a href="#order" class="cta-button">Download Now - $14.99</a>
+                <a href="#learn-more" class="cta-button" style="background: rgba(255,255,255,0.2);">Learn More</a>
+                <p class="guarantee">✓ Instant Download ✓ Audio MP3 Included ✓ Exclusive Video Access</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section class="social-proof" id="learn-more">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">847</div>
+                    <div class="stat-label">Success Stories</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">90+</div>
+                    <div class="stat-label">Pages of Content</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">12</div>
+                    <div class="stat-label">Complete Chapters</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Actionable Strategies</div>
+                </div>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <p class="testimonial-text">"I made my first $1,000 online in Week 3. By Month 6, I had quit my corporate job. This book literally changed my life trajectory."</p>
+                    <p class="testimonial-author">- Jennifer Martinez, Digital Course Creator</p>
+                    <p class="testimonial-result">Result: $43,000 in 90 days</p>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-text">"From unemployed to $250,000 in 18 months. I followed every single step in this book and now I help other businesses grow."</p>
+                    <p class="testimonial-author">- David Chen, Marketing Consultant</p>
+                    <p class="testimonial-result">Result: $250,000/year revenue</p>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-text">"This book paid for itself 2,847 times over. I travel the world while my business runs itself using these systems."</p>
+                    <p class="testimonial-author">- Amanda Rodriguez, E-commerce Owner</p>
+                    <p class="testimonial-result">Result: $312,000/year automated income</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You Get -->
+    <section class="what-you-get">
+        <div class="container">
+            <h2 class="section-title">What You'll Master Inside</h2>
+            <p class="section-subtitle">A complete system to build, scale, and automate your digital business</p>
+            
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-icon">🎯</div>
+                    <h3 class="benefit-title">Golden Niche Formula</h3>
+                    <p class="benefit-description">Find profitable markets in 24 hours using the exact framework that identifies hungry audiences ready to buy.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">⚡</div>
+                    <h3 class="benefit-title">3-Second Website Test</h3>
+                    <p class="benefit-description">Psychology secrets that convert 40% more visitors into paying customers using proven conversion triggers.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">🤖</div>
+                    <h3 class="benefit-title">Automated Money Machine</h3>
+                    <p class="benefit-description">Build sales funnels that work 24/7, generating revenue while you sleep, travel, or spend time with family.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">📧</div>
+                    <h3 class="benefit-title">Email Gold Rush</h3>
+                    <p class="benefit-description">Turn your email list into a $42-for-every-$1-invested profit center using advanced psychology techniques.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">📈</div>
+                    <h3 class="benefit-title">Six-Figure Math</h3>
+                    <p class="benefit-description">The exact equation for $100K+ revenue with specific numbers, metrics, and milestones to track your progress.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">🔧</div>
+                    <h3 class="benefit-title">Complete Systems</h3>
+                    <p class="benefit-description">Build business systems that scale without your constant attention, creating true financial and time freedom.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bonus Section -->
+    <section class="bonus-section">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Exclusive Buyer Bonuses</h2>
+            <p class="section-subtitle" style="color: rgba(255,255,255,0.8);">When you purchase today, you instantly receive these valuable bonuses</p>
+            
+            <div class="bonus-grid">
+                <div class="bonus-item">
+                    <div class="bonus-value">$29 VALUE</div>
+                    <h3 class="bonus-title">🎧 Complete Audio MP3 Version</h3>
+                    <p class="bonus-description">Listen while driving, exercising, or multitasking. Perfect for busy entrepreneurs who want to learn on the go.</p>
+                </div>
+                <div class="bonus-item">
+                    <div class="bonus-value">$97 VALUE</div>
+                    <h3 class="bonus-title">🎥 Exclusive Video Training Series</h3>
+                    <p class="bonus-description">Watch Sarah implement the strategies step-by-step. See exactly how to apply each concept in real-time.</p>
+                </div>
+                <div class="bonus-item">
+                    <div class="bonus-value">$47 VALUE</div>
+                    <h3 class="bonus-title">📋 Quick Start Action Guide</h3>
+                    <p class="bonus-description">Your first 48-hour roadmap with specific tasks to get immediate momentum and early wins.</p>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <h3 style="font-size: 24px; margin-bottom: 10px;">Total Bonus Value: $173</h3>
+                <p style="font-size: 18px; color: #00ffff;">Yours FREE with your purchase today</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing" id="order">
+        <div class="container">
+            <h2 class="section-title">Special Launch Pricing</h2>
+            
+            <div class="pricing-card">
+                <div class="price-old">$39.99</div>
+                <div class="price-new">$14.99</div>
+                <div class="discount-badge">Save 62%</div>
+                
+                <div class="urgency">
+                    <div class="urgency-title">⏰ Limited Time Offer</div>
+                    <p class="urgency-text">Price increases to $39.99 in 2 days, 14 hours. Only 108 copies left at this price.</p>
+                </div>
+                
+                <a href="#" class="cta-button" style="font-size: 24px; padding: 20px 50px; display: inline-block; margin: 20px 0;">Get Instant Access Now</a>
+                
+                <p style="color: #666; font-size: 14px; margin-top: 20px;">
+                    ✓ Instant Download ✓ Works on All Devices ✓ Audio MP3 Included<br>
+                    ✓ Exclusive Video Training ✓ 30-Day Access Guarantee
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">Q: How quickly can I see results?</div>
+                    <div class="faq-answer">Many readers implement the first strategies within 48 hours and see initial results within 30 days. Building a sustainable six-figure business typically takes 6-12 months of consistent effort.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q: Do I need technical skills or experience?</div>
+                    <div class="faq-answer">No! Everything is explained in simple, step-by-step language. If you can use email and browse the internet, you can implement these strategies.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q: Is this just rehashed advice I can find online?</div>
+                    <div class="faq-answer">Absolutely not. This is a complete system based on building multiple seven-figure businesses. The level of detail and implementation guidance is not available anywhere else.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q: What formats do I receive?</div>
+                    <div class="faq-answer">You get the complete PDF ebook, full MP3 audiobook, exclusive video training series, and bonus materials - all delivered instantly via email.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q: What if this doesn't work for me?</div>
+                    <div class="faq-answer">This system has worked for thousands of entrepreneurs across dozens of industries. Success requires implementation - the strategies only work if you work them consistently.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h3>Ready to Transform Your Financial Future?</h3>
+                <p>Join 847 successful entrepreneurs who've already used this blueprint to build their digital empires.</p>
+                <a href="#order" class="cta-button" style="font-size: 20px; padding: 15px 35px; margin: 20px 0; display: inline-block;">Get Your Copy Now - $14.99</a>
+                <p>© 2024 Digital Entrepreneur's Blueprint. All rights reserved.</p>
+                <p style="font-size: 12px; margin-top: 20px;">Individual results may vary. Success requires effort and implementation of the strategies provided.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
